@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/links', 'LinksController@links');
+
 Route::get('/', function () {
     return view('welcome');
 });
