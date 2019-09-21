@@ -3,7 +3,7 @@ Save data from API and display with Node
 
 This is a small Test web application developed in PHP (Laravel), Node JS and Twitter Bootstrap 4. 
 
-![Screenshot]()
+![Screenshot](https://raw.githubusercontent.com/iloveyii/api/master/screenshot.png)
 
 ### Requirements
 Develop an application to read data from an open API and save to MySQL. Display the data using Node js.
