@@ -1,0 +1,23 @@
+{
+  "name": "node_express",
+  "version": "1.0.0",
+  "description": "Node and express with mysql",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}

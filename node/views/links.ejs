@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node - Express - MySQL</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <br />
+            <br />
+
+            <h1> Links By Location Name </h1>
+
+            <br />
+            <br />
+
+            <%= linksByLocation.length %>
+
+            <% for(let k = 0; k < keys.length; k++) { %>
+                <h2><%= linksByLocation[keys[k]][0].loc_name %></h2>
+
+                <ul class="list-group list-group-flush">
+                    <% for(let i = 0; i < (linksByLocation[keys[k]]).length; i++) { %>
+
+                        <li class="list-group-item list-group-item-action">
+                            <div class="row">
+                                <div class="col-3"><a target="_blank" href="<%=linksByLocation[keys[k]][i].url %>"> <%= linksByLocation[keys[k]][i].name %> </a> </div>
+                                <div class="col-6"><%= linksByLocation[keys[k]][i].url %></div>
+                            </div>
+                        </li>
+
+                    <% } %>
+                </ul>
+                <br/>
+                <br/>
+                <br/>
+            <% } %>
+
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>
