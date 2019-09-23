@@ -19,6 +19,7 @@ Develop an application to read data from an open API and save to MySQL. Display 
   
 #### Node Application
   * CD to directory `cd node` and then run npm install `npm install` .
+  * Change database credentials at the top of the file `api/node/server.js`.
   * Run the node server as `npm start`. Then browse to `localhost:3000`. 
     
 ### Requirements
