@@ -41,18 +41,23 @@ class SaveData extends Command
      */
     public function handle()
     {
+        /**
+         * Fetch data from api and convert json to array
+         */
         $data = file_get_contents($this->apiUrl);
         $links = json_decode($data, true);
         $count = 0;
 
+        // Iterate through all links and save location and links
         foreach ($links as $link) {
-            if( empty( $link['Location']) || strlen($link['Location']) > 20 ) continue;
+            if( empty( $link['Location']) || strlen($link['Location']) > 20 ) continue; // E.g remove empty and long files
 
             $insertLocation = [
                 'name' => $link['Location']
             ];
             $location= Locations::firstOrCreate($insertLocation);
 
+            // If location save is successful then save to link table
             if($location->save()) {
                 $insertLink = [
                     'name' => $link['LinkName'],
