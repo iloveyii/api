@@ -16,6 +16,7 @@ Develop an application to read data from an open API and save to MySQL. Display 
   * CD to directory `cd api/php` and then install composer packages as `composer install` .
   * Run the database migrations `php artisan migrate`.  
   * Run the data import command to get data from API and save to MySQL database as `php artisan api:data`.  
+  * To test the end point cd to public/ and run php build server (or any) as `php -S localhost:8080` and browse to http://localhost:8080/links .
   
 #### Node Application
   * CD to directory `cd node` and then run npm install `npm install` .
