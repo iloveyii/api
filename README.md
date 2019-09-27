@@ -5,7 +5,7 @@ This is a small Test web application developed in PHP (Laravel), Node JS and Twi
 
 ![Screenshot](https://raw.githubusercontent.com/iloveyii/api/master/screenshot.png)
 
-### Requirements
+### Task Description
 Develop an application to read data from an open API and save to MySQL. Display the data using Node js.
 
 ### Installations

@@ -25,14 +25,14 @@
                 <ul class="list-group list-group-flush">
                     <% for(let i = 0; i < (linksByLocation[keys[k]]).length; i++) { %>
 
-                    <li class="list-group-item list-group-item-action">
-                        <div class="row">
-                            <div class="col-3"><a target="_blank"
-                                                  href="<%= linksByLocation[keys[k]][i].url %>"> <%= linksByLocation[keys[k]][i].name %> </a>
+                        <li class="list-group-item list-group-item-action">
+                            <div class="row">
+                                <div class="col-3"><a target="_blank"
+                                                      href="<%= linksByLocation[keys[k]][i].url %>"> <%= linksByLocation[keys[k]][i].name %> </a>
+                                </div>
+                                <div class="col-6"><%= linksByLocation[keys[k]][i].url %></div>
                             </div>
-                            <div class="col-6"><%= linksByLocation[keys[k]][i].url %></div>
-                        </div>
-                    </li>
+                        </li>
 
                     <% } %>
                 </ul>
